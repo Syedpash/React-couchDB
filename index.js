@@ -7,6 +7,7 @@ origins = *
 
 // --------------------CRUD operations COUCHDB-------------------------------------------------------
 
+// "mycouchshop" is a database name
 
     let     username = "*****";
     let password = "*****";
@@ -51,4 +52,12 @@ origins = *
       }
     })
     .then (res => console.log(res));
+
+// deleting a database
+      Axios.delete('http://localhost:5984/mycouchshop', {
+      headers: {
+        'Authorization': `Basic ${token}`
+      }
+    })
+    .then(res => console.log(res));
    
