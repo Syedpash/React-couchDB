@@ -1,4 +1,11 @@
- // --------------------CRUD operations COUCHDB-------------------------------------------------------
+// updating the local.ini file 
+      [cors]
+origins = *
+
+[httpd]
+    enable_cors = true
+
+// --------------------CRUD operations COUCHDB-------------------------------------------------------
 
 
     let     username = "*****";
